@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="Style/bootstrap.min.css">
+        <link rel="stylesheet" href="Style/style.css">
+        <title>CRUD :)</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="head">
+                <h1 class="position-relative"> <span class="active">CRUDS</span>
+                    Operating System</h1>
+            </div>
+            <div class="form my-5">
+                <div id="errorform"></div>
+                <label for="">PRODUCT NAME</label>
+                <input type="text" name="Product Name" class="form-control mb-3" id="name">
+                <p style="color: red;" class="error"></p>
+
+
+                <label for="price">PRODUCT PRICE</label>
+                <input type="number" name="Product Price" class="form-control mb-3" id="price">
+                <p style="color: red;" class="error"></p>
+                <label for="cat">PRODUCT CATEGORY</label>
+                <input type="text" name="Product Category" class="form-control mb-3" id="cat">
+                <p style="color: red;" class="error"></p>
+
+
+                <label for="desc">PRODUCT DESCRIPTION</label>
+                <input type="text"  name= "Product Description" class="form-control mb-3" id="desc">
+                <p style="color: red;"  class="error"></p>
+
+                <button class="btn btn-info text-dark mb-3"
+                    id="addBtn">Add Product</button>
+                <button class="btn btn-success text-dark mb-3 show"
+                    id="updateBtn">Update Product</button>
+                <p class="text-danger text-center fw-bold" id="emp"></p>
+
+                <input type="search" class="form-control mb-3"
+                    placeholder="search...">
+                <div id="error"></div>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Index</th>
+                            <th>Name</th>
+                            <th>Price</th>
+                            <th>category</th>
+                            <th>Desc</th>
+                            <th>Delete</th>
+                            <th>Update</th>
+                        </tr>
+                    </thead>
+                    <tbody id="info">                        
+
+                     
+
+                        
+                    </tbody>
+                </table>
+
+            </div>
+        </div>
+        <script src="Script/bootstrap.bundle.min.js"></script>
+        <script src="Script/script.js"></script>
+    </body>
+</html>
